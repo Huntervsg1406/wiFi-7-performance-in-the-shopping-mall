@@ -24,7 +24,7 @@ body {
 
   align-items: center;
 
-  padding: 15px 50px;
+  padding: 10px 40px;
 
   background: #d8d8d8;
 
@@ -121,7 +121,7 @@ main {
 
   margin: auto;
 
-  padding: 60px 20px;
+  padding: 40px 20px;
 
   min-height: 70vh;
 
@@ -474,10 +474,10 @@ footer {
 /* Team section on homepage */
 
 .home-team {
-  width: 60%;
+  width: 50%;
   max-width: 750px;
   margin-top: 35px;
-  padding: 20px;
+  padding: 50px;
 }
 
 .home-team h2 {
@@ -489,8 +489,8 @@ footer {
 }
 
 .home-team .team-grid {
-  gap: 10px;
-  margin-top: 10px;
+  gap: 7px;
+  margin-top: 7px;
 }
 
 .home-team .team-member {
