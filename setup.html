@@ -4,378 +4,380 @@
 
 <head>
 
-<meta charset="UTF-8">
+    <meta charset="UTF-8">
 
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-<title>Setup - WiFi 7 Mall Testing</title>
+    <title>Setup - WiFi 7 Mall Testing</title>
 
-<link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/style.css">
 
 </head>
 
 <body>
 
-<!--for some reason header and footer have to be hard coded in each page for it to work on github pages, can't be added as a component-->
-<header class="navbar">   
+    <!--for some reason header and footer have to be hard coded in each page for it to work on github pages, can't be added as a component-->
+    <header class="navbar">
 
-    <div class="logo">
-        <a href="index.html">
-            <img src="images/logo.png" alt="WiFi 7 Logo">
-            
-        </a>
-        
-    </div>
+        <div class="logo">
+            <a href="index.html">
+                <img src="images/logo.png" alt="WiFi 7 Logo">
 
-    <div><h1 class="site-header">WiFi 7 Mall Testing</h1></div>
-
-    <nav>
-
-      <ul>
-    <li><a href="index.html">Home</a></li>
-    <li><a href="setup.html">Setup</a></li>
-    <li><a href="scenario-maps.html">Scenario Maps</a></li>
-    <li><a href="raw-data.html">Raw Data</a></li>
-    <li><a href="results.html">Results</a></li>
-    <li><a href="about.html">About</a></li>
-</ul>
-
-    </nav>
-
-</header>
-
-<main class="setup-page">
-
-    <h1 class="page-title">Testing Setup</h1>
-
-    <p class="page-intro">
-        The equipment and procedure used to conduct the WiFi 7
-        field investigation at Westfield Newmarket.
-    </p>
-
-
-    <div class="setup-grid">
-
-        <!-- left -->
-        <div class="setup-left">
-
-            <section class="setup-card">
-
-                <h2>Our Equipment</h2>
-
-                <div class="equipment-item">
-
-                    <div>
-                        <h3>ASUS RT-BE92U WiFi 7 Router</h3>
-
-                        <p>
-                            1 × ASUS RT-BE92U (BE9700) Tri-Band
-                            WiFi 7 router.
-                        </p>
-
-                        <p>
-                            Supports 2.4 GHz, 5 GHz and 6 GHz WiFi 7
-                            operation.
-                        </p>
-
-                        <p class="equipment-price">
-                            Cost: NZD $699
-                        </p>
-                    </div>
-
-                </div>
-
-
-                <div class="equipment-item">
-
-                    <div>
-                        <h3>TP-Link Archer TBE400UH</h3>
-
-                        <p>
-                            2 × TP-Link Archer TBE400UH BE6500
-                            WiFi 7 High Gain Wireless USB Adapters.
-                        </p>
-
-                        <p>
-                            Used by the client devices to connect
-                            to the WiFi 7 test network.
-                        </p>
-
-                        <p class="equipment-price">
-                            Cost: NZD $149 each
-                        </p>
-                    </div>
-
-                </div>
-
-
-                <div class="equipment-item">
-
-                    <div>
-                        <h3>HP EliteBook 840 G10</h3>
-
-                        <p>
-                            2 × HP EliteBook 840 G10 notebooks
-                            used as the client and server devices.
-                        </p>
-
-                        <p>
-                            Intel Core i5-1335U, 16 GB DDR5 RAM
-                            and Intel AX211 WiFi 6E.
-                        </p>
-
-                        <p class="equipment-price">
-                            Cost: NZD $2,765 each
-                        </p>
-                    </div>
-
-                </div>
-
-            </section>
-
-
-            <section class="setup-card">
-
-                <h2>Our Environment</h2>
-
-                <p>
-                    Testing was conducted at predetermined locations
-                    throughout Westfield Newmarket.
-                </p>
-
-                <p>
-                    Multiple floors and different mall environments
-                    were selected to investigate WiFi performance
-                    under real-world conditions.
-                </p>
-
-                <a class="setup-link" href="scenario-maps.html">
-                    View Testing Locations →
-                </a>
-
-            </section>
+            </a>
 
         </div>
 
+        <div>
+            <h1 class="site-header">WiFi 7 Mall Testing</h1>
+        </div>
 
-        <!-- right-->
-        <section class="setup-card setup-tutorial">
+        <nav>
 
-            <h2>Setup Tutorial</h2>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="setup.html">Setup</a></li>
+                <li><a href="scenario-maps.html">Scenario Maps</a></li>
+                <li><a href="raw-data.html">Raw Data</a></li>
+                <li><a href="results.html">Results</a></li>
+                <li><a href="about.html">About</a></li>
+            </ul>
 
-            <ol>
+        </nav>
 
-                <li>
-                    Choose a testing scenario and place the equipment
-                    at the predetermined testing location.
-                </li>
+    </header>
 
-                <li>
-                    Set up the ASUS WiFi 7 router, client devices
-                    and TP-Link WiFi 7 adapters.
-                </li>
+    <main class="setup-page">
 
-                <li>
-                    Ensure Kali Linux is configured correctly and
-                    the WiFi 7 adapter drivers are up to date.
-                </li>
+        <h1 class="page-title">Testing Setup</h1>
 
-                <li>
-                    Connect the devices to the required WiFi network
-                    and frequency band.
-                </li>
+        <p class="page-intro">
+            The equipment and procedure used to conduct the WiFi 7
+            field investigation at Westfield Newmarket.
+        </p>
 
-                <li>
-                    Configure the client and server devices for
-                    iperf3 testing.
-                </li>
 
-                <li>
-                    Use iperf3 to generate network traffic between
-                    the two client devices.
-                </li>
+        <div class="setup-grid">
 
-                <li>
-                    Capture the wireless traffic using Wireshark.
-                </li>
+            <!-- left -->
+            <div class="setup-left">
 
-                <li>
-                    Record the throughput and RSSI measurements
-                    from the test.
-                </li>
+                <section class="setup-card">
 
-                <li>
-                    Store the results in the investigation dataset.
-                </li>
+                    <h2>Our Equipment</h2>
 
-                <li>
-                    Repeat the experiment for the required frequency
-                    bands and predetermined testing scenarios.
-                </li>
+                    <div class="equipment-item">
 
-            </ol>
+                        <div>
+                            <h3>ASUS RT-BE92U WiFi 7 Router</h3>
 
-        </section>
+                            <p>
+                                1 × ASUS RT-BE92U (BE9700) Tri-Band
+                                WiFi 7 router.
+                            </p>
+
+                            <p>
+                                Supports 2.4 GHz, 5 GHz and 6 GHz WiFi 7
+                                operation.
+                            </p>
+
+                            <p class="equipment-price">
+                                Cost: NZD $699
+                            </p>
+                        </div>
+
+                    </div>
+
+
+                    <div class="equipment-item">
+
+                        <div>
+                            <h3>TP-Link Archer TBE400UH</h3>
+
+                            <p>
+                                2 × TP-Link Archer TBE400UH BE6500
+                                WiFi 7 High Gain Wireless USB Adapters.
+                            </p>
+
+                            <p>
+                                Used by the client devices to connect
+                                to the WiFi 7 test network.
+                            </p>
+
+                            <p class="equipment-price">
+                                Cost: NZD $149 each
+                            </p>
+                        </div>
+
+                    </div>
+
+
+                    <div class="equipment-item">
+
+                        <div>
+                            <h3>HP EliteBook 840 G10</h3>
+
+                            <p>
+                                2 × HP EliteBook 840 G10 notebooks
+                                used as the client and server devices.
+                            </p>
+
+                            <p>
+                                Intel Core i5-1335U, 16 GB DDR5 RAM
+                                and Intel AX211 WiFi 6E.
+                            </p>
+
+                            <p class="equipment-price">
+                                Cost: NZD $2,765 each
+                            </p>
+                        </div>
+
+                    </div>
+
+                </section>
+
+
+                <section class="setup-card">
+
+                    <h2>Our Environment</h2>
+
+                    <p>
+                        Testing was conducted at predetermined locations
+                        throughout Westfield Newmarket.
+                    </p>
+
+                    <p>
+                        Multiple floors and different mall environments
+                        were selected to investigate WiFi performance
+                        under real-world conditions.
+                    </p>
+
+                    <a class="setup-link" href="scenario-maps.html">
+                        View Testing Locations →
+                    </a>
+
+                </section>
+
+            </div>
+
+
+            <!-- right-->
+            <section class="setup-card setup-tutorial">
+
+                <h2>Setup Tutorial</h2>
+
+                <ol>
+
+                    <li>
+                        Choose a testing scenario and place the equipment
+                        at the predetermined testing location.
+                    </li>
+
+                    <li>
+                        Set up the ASUS WiFi 7 router, client devices
+                        and TP-Link WiFi 7 adapters.
+                    </li>
+
+                    <li>
+                        Ensure Kali Linux is configured correctly and
+                        the WiFi 7 adapter drivers are up to date.
+                    </li>
+
+                    <li>
+                        Connect the devices to the required WiFi network
+                        and frequency band.
+                    </li>
+
+                    <li>
+                        Configure the client and server devices for
+                        iperf3 testing.
+                    </li>
+
+                    <li>
+                        Use iperf3 to generate network traffic between
+                        the two client devices.
+                    </li>
+
+                    <li>
+                        Capture the wireless traffic using Wireshark.
+                    </li>
+
+                    <li>
+                        Record the throughput and RSSI measurements
+                        from the test.
+                    </li>
+
+                    <li>
+                        Store the results in the investigation dataset.
+                    </li>
+
+                    <li>
+                        Repeat the experiment for the required frequency
+                        bands and predetermined testing scenarios.
+                    </li>
+
+                </ol>
+
+            </section>
         </div>
 
         <section class="setup-technical">
 
-    <h2 class="technical-title">Monitoring Mode & iPerf3 Configuration</h2>
+            <h2 class="technical-title">Monitoring Mode & iPerf3 Configuration</h2>
 
-    <p class="technical-intro">
-        In order to collect data from the WiFi adapters, monitoring mode
-        was configured so that RadioTap headers and RSSI could be read
-        using Wireshark.
-    </p>
+            <p class="technical-intro">
+                In order to collect data from the WiFi adapters, monitoring mode
+                was configured so that RadioTap headers and RSSI could be read
+                using Wireshark.
+            </p>
 
-    <div class="technical-grid">
+            <div class="technical-grid">
 
-        <!-- Monitoring Mode -->
-        <div class="setup-card technical-card">
+                <!-- Monitoring Mode -->
+                <div class="setup-card technical-card">
 
-            <h2>Monitoring Mode & Wireshark</h2>
+                    <h2>Monitoring Mode & Wireshark</h2>
 
-            <h3>Setup Configuration</h3>
+                    <h3>Setup Configuration</h3>
 
-            <p><strong>Check the current network and channel:</strong></p>
+                    <p><strong>Check the current network and channel:</strong></p>
 
-            <pre><code>iw dev wlan0 info</code></pre>
+                    <pre><code>iw dev wlan0 info</code></pre>
 
-            <p><strong>Set channel and frequency:</strong></p>
+                    <p><strong>Set channel and frequency:</strong></p>
 
-            <pre><code>sudo iw dev wlan0mon set channel x
+                    <pre><code>sudo iw dev wlan0mon set channel x
 sudo iw dev wlan0mon set freq &lt;frequency&gt;</code></pre>
 
-            <p><strong>Get the router BSSID:</strong></p>
+                    <p><strong>Get the router BSSID:</strong></p>
 
-            <pre><code>iw dev wlan0 link</code></pre>
+                    <pre><code>iw dev wlan0 link</code></pre>
 
-            <p><strong>Get the Kali device MAC:</strong></p>
+                    <p><strong>Get the Kali device MAC:</strong></p>
 
-            <pre><code>ip link show wlan0</code></pre>
+                    <pre><code>ip link show wlan0</code></pre>
 
-            <p><strong>Get the target device MAC:</strong></p>
+                    <p><strong>Get the target device MAC:</strong></p>
 
-            <pre><code>arp -n | grep &lt;target-ip&gt;</code></pre>
+                    <pre><code>arp -n | grep &lt;target-ip&gt;</code></pre>
 
-            <h3>Enable Monitoring Mode</h3>
+                    <h3>Enable Monitoring Mode</h3>
 
-            <pre><code>sudo reboot
+                    <pre><code>sudo reboot
 sudo iw reg set NZ
 iw dev
 
 sudo airmon-ng check kill
 sudo airmon-ng start wlan0</code></pre>
 
-            <h3>Wireshark Filters</h3>
+                    <h3>Wireshark Filters</h3>
 
-            <p><strong>Only traffic on the BSS:</strong></p>
+                    <p><strong>Only traffic on the BSS:</strong></p>
 
-            <pre><code>wlan.bssid == aa:bb:cc:dd:ee:ff</code></pre>
+                    <pre><code>wlan.bssid == aa:bb:cc:dd:ee:ff</code></pre>
 
-            <p><strong>Traffic between the two devices:</strong></p>
+                    <p><strong>Traffic between the two devices:</strong></p>
 
-            <pre><code>(wlan.sa == &lt;your-kali-mac&gt; &amp;&amp; wlan.da == &lt;target-mac&gt;) ||
+                    <pre><code>(wlan.sa == &lt;your-kali-mac&gt; &amp;&amp; wlan.da == &lt;target-mac&gt;) ||
 (wlan.sa == &lt;target-mac&gt; &amp;&amp; wlan.da == &lt;your-kali-mac&gt;)</code></pre>
 
-            <p><strong>Client to server traffic:</strong></p>
+                    <p><strong>Client to server traffic:</strong></p>
 
-            <pre><code>wlan.sa == &lt;Client-mac&gt; &amp;&amp; wlan.da == &lt;Server-mac&gt;</code></pre>
+                    <pre><code>wlan.sa == &lt;Client-mac&gt; &amp;&amp; wlan.da == &lt;Server-mac&gt;</code></pre>
 
-            <p><strong>iPerf3 UDP traffic:</strong></p>
+                    <p><strong>iPerf3 UDP traffic:</strong></p>
 
-            <pre><code>(wlan.bssid == aa:bb:cc:dd:ee:ff) &amp;&amp; udp.port == 5201</code></pre>
+                    <pre><code>(wlan.bssid == aa:bb:cc:dd:ee:ff) &amp;&amp; udp.port == 5201</code></pre>
 
-        </div>
+                </div>
 
 
-        <!-- iPerf3 -->
-        <div class="setup-card technical-card">
+                <!-- iPerf3 -->
+                <div class="setup-card technical-card">
 
-            <h2>iPerf3 Configuration</h2>
+                    <h2>iPerf3 Configuration</h2>
 
-            <p>
-                iPerf3 was used to generate network traffic between
-                the client and server devices during testing.
-            </p>
+                    <p>
+                        iPerf3 was used to generate network traffic between
+                        the client and server devices during testing.
+                    </p>
 
-            <h3>Installation</h3>
+                    <h3>Installation</h3>
 
-            <pre><code>sudo apt update
+                    <pre><code>sudo apt update
 sudo apt install -y iperf3</code></pre>
 
-            <h3>Server (Receiver)</h3>
+                    <h3>Server (Receiver)</h3>
 
-            <pre><code>iperf -s</code></pre>
+                    <pre><code>iperf -s</code></pre>
 
-            <h3>Client (Sender)</h3>
+                    <h3>Client (Sender)</h3>
 
-            <pre><code>iperf3 &lt;mode&gt; &lt;destination-ip&gt; &lt;udp-mode&gt; &lt;bandwidth&gt; &lt;duration&gt; &lt;interval&gt;</code></pre>
+                    <pre><code>iperf3 &lt;mode&gt; &lt;destination-ip&gt; &lt;udp-mode&gt; &lt;bandwidth&gt; &lt;duration&gt; &lt;interval&gt;</code></pre>
 
-            <p><strong>Example UDP test:</strong></p>
+                    <p><strong>Example UDP test:</strong></p>
 
-            <pre><code>iperf3 -c &lt;server-ip&gt; -u -b 10M -t 60 -i 1</code></pre>
+                    <pre><code>iperf3 -c &lt;server-ip&gt; -u -b 10M -t 60 -i 1</code></pre>
 
-            <h3>Test Configuration</h3>
+                    <h3>Test Configuration</h3>
 
-            <p>
-                For all tests, the iPerf3 client was configured to send
-                traffic for 60 seconds with intervals of 1 second.
-            </p>
+                    <p>
+                        For all tests, the iPerf3 client was configured to send
+                        traffic for 60 seconds with intervals of 1 second.
+                    </p>
 
-        </div>
+                </div>
 
-    </div>
-    
+            </div>
 
-</section>
 
-    </div>
-    
-
-</main>
-
-<footer>
-
-    <div class="footer-container">
-
-         <div class="footer-about">
-
-            <h3>WiFi 7 Mall Testing Project</h3>
-
-            
+        </section>
 
         </div>
 
-        <div class="footer-links">
 
-            <h3>Quick Links</h3>
+    </main>
 
-            <ul>
+    <footer>
 
-                
+        <div class="footer-container">
 
-                <li><a href="terms-and-conditions.html">Terms & Conditions</a></li>
+            <div class="footer-about">
 
-                <li><a href="faq.html">FAQs</a></li>
+                <h3>WiFi 7 Mall Testing Project</h3>
 
-                <li><a href="privacy-policy.html">Privacy Policy</a></li>
 
-            </ul>
+
+            </div>
+
+            <div class="footer-links">
+
+                <h3>Quick Links</h3>
+
+                <ul>
+
+
+
+                    <li><a href="terms-and-conditions.html">Terms & Conditions</a></li>
+
+                    <li><a href="faq.html">FAQs</a></li>
+
+                    <li><a href="privacy-policy.html">Privacy Policy</a></li>
+
+                </ul>
+
+            </div>
 
         </div>
 
-    </div>
+        <div class="copyright">
 
-    <div class="copyright">
+            © 2026 WiFi 7 Mall Testing Project
 
-        © 2026 WiFi 7 Mall Testing Project
+        </div>
 
-    </div>
+    </footer>
 
-</footer>
-
-<script src="js/script.js"></script>
+    <script src="js/script.js"></script>
 
 </body>
 
