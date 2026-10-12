@@ -422,13 +422,11 @@ footer {
   max-width: 1200px;
   margin: auto;
 
-  min-height: 70vh;
-
   display: flex;
-  justify-content: center;
+  flex-direction: column;
   align-items: center;
 
-  padding: 60px 20px;
+  padding: 40px 20px;
 }
 
 .home-content {
@@ -437,14 +435,14 @@ footer {
 }
 
 .home-content h1 {
-  font-size: 48px;
+  font-size: 43px;
   color: #222;
-  margin-bottom: 20px;
+  margin-bottom: 16px;
 }
 
 .home-content p {
-  font-size: 17px;
-  line-height: 1.6;
+  font-size: 15px;
+  line-height: 1.1;
   color: #555;
 
   margin-bottom: 10px;
@@ -453,11 +451,11 @@ footer {
 .home-button {
   display: inline-block;
 
-  margin-top: 30px;
+  margin: 20px 3px 0;
   padding: 16px 25px;
 
-  background: #aebcff;
-  color: #222;
+  background: #8f9fef;
+  color: #000000;
 
   text-decoration: none;
   font-size: 18px;
@@ -473,14 +471,56 @@ footer {
   transform: translateY(-2px);
 }
 
+/* Team section on homepage */
+
+.home-team {
+  width: 60%;
+  max-width: 750px;
+  margin-top: 35px;
+  padding: 20px;
+}
+
+.home-team h2 {
+  font-size: 20px;
+}
+
+.home-team p {
+  font-size: 13px;
+}
+
+.home-team .team-grid {
+  gap: 10px;
+  margin-top: 10px;
+}
+
+.home-team .team-member {
+  padding: 11px;
+}
+
+.home-team .team-member h3 {
+  font-size: 16px;
+}
+
+.home-team .team-member strong {
+  font-size: 15px;
+}
+
+.home-team .team-member span {
+  font-size: 13px;
+}
+
 
 /* Homepage mobile */
 
 @media (max-width: 800px) {
 
   .home-page {
-    min-height: 60vh;
-    padding: 50px 15px;
+    padding: 40px 15px;
+  }
+
+  .home-team {
+    width: 100%;
+    margin-top: 35px;
   }
 
   .home-content h1 {
@@ -490,8 +530,9 @@ footer {
   .home-content p {
     font-size: 16px;
   }
-
 }
+
+
 
 
 
