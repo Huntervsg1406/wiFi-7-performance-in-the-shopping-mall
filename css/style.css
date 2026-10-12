@@ -667,6 +667,19 @@ padding-top:20px;
     margin: 0;
 }
 
+.project-roles-title {
+    margin-top: 25px;
+    margin-bottom: 15px;
+    font-size: 18px;
+}
+
+.team-member span {
+    display: block;
+    margin-top: 5px;
+    color: #666;
+    font-size: 14px;
+}
+
 
 /* about mobile */
 
